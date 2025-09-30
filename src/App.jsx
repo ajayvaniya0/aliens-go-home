@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -6,7 +8,7 @@ function App() {
   return (
     <>
       <div className="App">
-      <h1>We will create an awesome game with React, Redux, and SVG!</h1>
+      <h1>{this.props.message}</h1>
     </div>
     </>
   )
